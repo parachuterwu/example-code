@@ -1,14 +1,14 @@
 /* 超过一行显示省略号 */
 .one-line-overflow-ellipsis {
-    white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* 超过多行显示省略号 */
 .several-lines-overflow-ellipsis {
-    display: -webkit-box;
     -webkit-box-orient: vertical;
+    display: -webkit-box;
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
