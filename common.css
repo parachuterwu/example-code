@@ -13,3 +13,7 @@
     overflow: hidden;
 }
 
+/* -webkit-tap-highlight-color is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped */
+.remove-tap-highlight {
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
