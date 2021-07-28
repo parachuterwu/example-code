@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #161616;
+      }
+
+      .live {
+        width: 82px;
+        height: 40px;
+        background-image: url("./live-light.png");
+        background-size: auto 40px;
+        animation: play 2s steps(48) infinite;
+      }
+
+      @keyframes play {
+        0% {
+          background-position: 0;
+        }
+
+        100% {
+          background-position: -3936px;
+        }
+      }
+
+      .live-two {
+        width: 82px;
+        height: 40px;
+        overflow: hidden;
+      }
+
+      .live-two img {
+        animation: play-two 2s steps(48) infinite;
+        height: 100%;
+      }
+
+      @keyframes play-two {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="live"></div>
+    <div class="live-two">
+      <img src="./live-light.png" />
+    </div>
+  </body>
+</html>
